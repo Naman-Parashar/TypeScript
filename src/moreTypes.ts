@@ -31,3 +31,35 @@ console.log(bookObject.name); // Output: The Great Gatsby
 
 const element = document.getElementById("myElement") as HTMLInputElement;
  // Type assertion to specify that the element is an HTMLInputElement
+
+
+ // never type is a special type in TypeScript that represents values that never occur.
+// It is used to indicate that a function never returns or that a variable can never
+//  have a value.
+// The never type is often used in situations where a function throws an error, 
+// enters an infinite loop, or has a return type that is impossible to reach.
+
+type Role = "admin" | "user" | "guest";
+function throwError(role: Role): void {
+    if (role === "admin") {
+        console.log("Welcome, admin!");
+        return;
+    }
+    if (role === "user") {
+        console.log("Welcome, user!");
+        return;
+    }
+    if (role === "guest") {
+        console.log("Welcome, guest!");
+        return;
+    }
+
+    role; // This line will never be reached, and TypeScript will infer the 
+    // type as 'never'.
+}
+
+function infiniteLoop(): never {
+    while (true) {
+        // This function will never return, and TypeScript will infer the type as 'never'.
+    } 
+}
