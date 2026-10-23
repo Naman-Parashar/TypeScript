@@ -89,7 +89,7 @@ const enum sugar{
     High = 3
 }
 // So, unlike a regular enum, you generally can't access Status as a runtime object:
-console.log(sugar.Low); // Not available as a runtime enum object
+// console.log(sugar); // Not available as a runtime enum object
 
 // Regular enum vs const enum
 // - enum Status: creates a runtime enum object; you can access Status.Pending.
