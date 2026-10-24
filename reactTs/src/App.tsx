@@ -1,4 +1,5 @@
 import { ChaiCard } from "./component/ChaiCard";
+import { Counter } from "./component/Counter";
 
 function App() {
   return (
@@ -9,6 +10,9 @@ function App() {
         name="Headphone"
         price= {5000}
         />
+      </div>
+      <div>
+        <Counter />
       </div>
     </>
   );
