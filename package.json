@@ -15,12 +15,15 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/Naman-Parashar/TypeScript/issues"
   },
   "homepage": "https://github.com/Naman-Parashar/TypeScript#readme",
   "devDependencies": {
     "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "axios": "^1.20.0"
   }
 }
