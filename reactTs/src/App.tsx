@@ -1,3 +1,4 @@
+import Card from "./component/Card";
 import { ChaiCard } from "./component/ChaiCard";
 import ChaiList from "./component/ChaiList";
 import { Counter } from "./component/Counter";
@@ -35,6 +36,13 @@ function App() {
         inputs={(order) =>{
           console.log(order.name);
         }}
+        />
+      </div>
+
+      <div>
+        <Card
+        title="Chai"
+        footer={<button>Order now</button>}
         />
       </div>
     </>
